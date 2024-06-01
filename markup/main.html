@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Rick and Morty Wiki</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__left">
+          <a class="header__logo-link header__logo-link--active">
+            <img class="header__logo" src="img/logo.svg" alt="Rick and Morty logo" width="50" height="50">
+          </a>
+          <div class="header__text">
+            <span class="header__title">Rick & Morty</span>
+            <span class="header__description">Wiki</span>
+          </div>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">
+                <div class="header__avatar-wrapper"></div>
+                <span class="header__user-name">heligie@gmail.com</span>
+                <span class="header__favorite-count">0</span>
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">
+                <span class="header__signout">Sign out</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <h1 class="visually-hidden">The Rick and Morty Wiki</h1>
+    <div class="tabs">
+      <div class="container">
+        <ul class="tabs-list">
+          <li class="tabs-item">
+            <a class="tabs-link tabs-link--characters" href="#">Characters</a>
+          </li>
+          <li class="tabs-item">
+            <a class="tabs-link tabs-link--episodes" href="#">Episodes</a>
+          </li>
+          <li class="tabs-item">
+            <a class="tabs-link tabs-link--locations" href="#">Locations</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="intro">
+      <div class="meeseeks"></div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <a class="footer__link" href="https://rickandmortyapi.com/documentation" target="_blank">
+          <span class="footer__title">The Rick and Morty</span>
+          <span class="footer__description">API Documentation</span>
+        </a>
+        <a class="footer__link" href="https://github.com/heligie" target="_blank">
+          <span class="footer__github">heligie</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/righteous-regular.woff2") format(woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Luckiest Guy";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/luckiest-guy-latin-400.woff2") format(woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Wotfard";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/wotfard-regular.woff2") format(woff2);
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "Wotfard";
+}
+
+.container {
+  width: 1144px;
+  margin: 0 auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.header {
+  background: #e4a788;
+  backdrop-filter: blur(5px);
+  border-bottom: 3px solid #000000;
+  min-width: 1144px;
+}
+
+.header__wrapper {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.header__logo-link {
+  cursor: pointer;
+}
+
+.header__logo-link--active {
+  cursor: default;
+}
+
+.header__text {
+  display: flex;
+  margin-top: 4px;
+  column-gap: 5px;
+  text-transform: lowercase;
+}
+
+.header__title {
+  color: #000000;
+  text-decoration: none;
+  font-size: 26px;
+  font-family: "Luckiest Guy";
+}
+
+.header__description {
+  font-size: 15px;
+  opacity: 70%;
+}
+
+.header__nav-list {
+  font-size: 18px;
+  display: flex;
+  column-gap: 20px;
+  list-style-type: none;
+  text-transform: lowercase;
+  align-items: center;
+}
+
+.header__avatar-wrapper {
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/avatar-summer-smith.svg");
+}
+
+.header__nav-link {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.header__favorite-count {
+  display: inline-block;
+  min-width: 30px;
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+  color: #000000;
+  background: rgba(68, 40, 29, 0.18);
+  border-radius: 15px;
+  font-family: "Righteous";
+}
+
+.tabs {
+  background: #2b2b2b;
+  padding: 15px;
+}
+
+.tabs-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+  text-transform: lowercase;
+  padding: 0;
+  margin: 0;
+  font-size: 19px;
+}
+
+.tabs-item {
+  padding: 0 25px;
+}
+
+.tabs-link {
+  text-decoration: none;
+}
+
+.tabs-link--characters {
+  color: #4f9dd1;
+}
+
+.tabs-link--episodes {
+  color: #e35933;
+}
+
+.tabs-link--locations {
+  color: #f78b1e;
+}
+
+.footer {
+  background: #2b2b2b;
+  backdrop-filter: blur(5px);
+  min-width: 100%;
+  min-width: 1144px;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #f2f1f1;
+}
+
+.footer__title {
+  font-family: "Luckiest Guy";
+  font-size: 15px;
+}
+
+.footer__description {
+  font-size: 12px;
+}
+
+.footer__github {
+  padding-left: 30px;
+  position: relative;
+}
+
+.footer__github::before {
+  content: "";
+  position: absolute;
+  background-image: url('../img/github_icon.svg');
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+.intro {
+  background: #7ddefe;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  min-width: 1144px;
+}
+
+.meeseeks {
+  background-image: url('../img/meeseeks.svg');
+  background-repeat: no-repeat;
+  width: 60%;
+  min-height: 350px;
+  margin: auto 0;
+}
